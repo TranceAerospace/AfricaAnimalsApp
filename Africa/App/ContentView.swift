@@ -50,6 +50,8 @@ struct ContentView: View {
                                 AnimalListItemView(animal: animal)
                             } // NavLink
                         } // ForEach
+                        CreditsView()
+                            .modifier(CenterModifier())
                     } // List
                 } else {
                     ScrollView(.vertical, showsIndicators: false) {
